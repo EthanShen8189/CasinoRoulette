@@ -1,11 +1,13 @@
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  * Created by Racoonsy on 15-02-04.
  */
 public class EuropeanRoulette extends Roulette {
 
-    public int[] numbers = new int[37];
+    public static int[] numbers = new int[37];
+    private static int result;
 
     public EuropeanRoulette() {
         numbers[0] = 0;
@@ -47,8 +49,17 @@ public class EuropeanRoulette extends Roulette {
         numbers[36] = 26;
     }
 
+    public static void setWinningNumber() {
+        int index = new Random().nextInt(37);
+        result = numbers[index];
+    }
+
+    public static int getWinningNumber(){
+        return result;
+    }
+
     public String toString() {
-        return "Ethan European roulette v1.0 Feb 13 2015\n" +
+        return "Ethan's European roulette v1.0 Feb 13 2015\n" +
                 "Wheel: " + Arrays.toString(numbers);
     }
 }

@@ -19,9 +19,11 @@ public class Player {
 
     }
 
-    public Player(String name, int token) {
+    public Player(String name, int token, int [] insideBet, String[] outsideBet) {
         this.name = name;
         this.token = token;
+        this.insideBet = insideBet;
+        this.outsideBet = outsideBet;
     }
 
     public String getName() {
@@ -49,6 +51,8 @@ public class Player {
     public void setToken(int token) {
         this.token = token;
     }
+
+    //TODO: implement the payout method.
 
     @Override
     public String toString() {

@@ -1,10 +1,13 @@
 import java.util.Arrays;
+import java.util.Random;
+
 /**
  * Created by Racoonsy on 15-02-04.
  */
 public class AmericanRoulette extends Roulette {
 
-    public int[] numbers = new int[38];
+    public static int[] numbers = new int[38];
+    private static int result;
 
     public AmericanRoulette() {
         numbers[0] = 0;
@@ -47,8 +50,17 @@ public class AmericanRoulette extends Roulette {
         numbers[37] = 2;
     }
 
+    public static void setWinningNumber() {
+        int index = new Random().nextInt(38);
+        result = numbers[index];
+    }
+
+    public static int getWinningNumber(){
+        return result;
+    }
+
     public String toString() {
-        return "Ethan American roulette v1.0 Feb 13 2015\n" +
+        return "Ethan's American roulette v1.0 Feb 13 2015\n" +
                 "Wheel: " + Arrays.toString(numbers);
     }
 }
