@@ -30,6 +30,7 @@ public class Player {
         return name;
     }
 
+
     public void setInsideBet(){
         Scanner kb = new Scanner(System.in);
         for(int j =0; j<insideBet.length; j++){
@@ -44,6 +45,7 @@ public class Player {
         }
     }
 
+
     public int getToken() {
         return token;
     }
@@ -51,6 +53,10 @@ public class Player {
     public void setToken(int token) {
         this.token = token;
     }
+
+    /*public void payOut(){
+        if(Roulette.getWinningNumber() = )
+    }*/
 
     //TODO: implement the payout method.
 
