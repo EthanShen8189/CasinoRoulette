@@ -5,10 +5,10 @@ import java.util.Scanner;
  */
 public class Player {
     private String name;
-    private int token;
+    private double token;
     protected int tokenValue;
-    private int [] insideBet;
-    private String [] outsideBet;
+    protected int [] insideBet;
+    protected String [] outsideBet;
 
     public Player(){
         name = null;
@@ -16,10 +16,9 @@ public class Player {
         tokenValue=0;
         insideBet = new int [6];
         outsideBet = new String [6];
-
     }
 
-    public Player(String name, int token, int [] insideBet, String[] outsideBet) {
+    public Player(String name, double token, int[] insideBet, String [] outsideBet) {
         this.name = name;
         this.token = token;
         this.insideBet = insideBet;
@@ -30,35 +29,41 @@ public class Player {
         return name;
     }
 
-
-    public void setInsideBet(){
-        Scanner kb = new Scanner(System.in);
-        for(int j =0; j<insideBet.length; j++){
-            insideBet[j] = kb.nextInt();
-        }
-    }
-
-    public void setOutsideBet(){
-        Scanner kb = new Scanner(System.in);
-        for(int j =0; j<outsideBet.length; j++){
-            outsideBet[j] = kb.nextLine();
-        }
-    }
-
-
-    public int getToken() {
+    public double getToken() {
         return token;
     }
 
-    public void setToken(int token) {
-        this.token = token;
+    public void setToken(double t) {
+        token = t + getToken();
     }
 
-    /*public void payOut(){
-        if(Roulette.getWinningNumber() = )
-    }*/
-
     //TODO: implement the payout method.
+    public void straight(){
+        setToken(35);
+    }
+
+    public void split(){
+        setToken(17);
+    }
+
+    public void street(){
+        setToken(11);
+    }
+
+    public void square(){
+        setToken(8);
+    }
+
+    public void topLine(){
+        setToken(6);
+    }
+
+    public void doubleStreet(){
+        setToken(5);
+    }
+
+
+
 
     @Override
     public String toString() {

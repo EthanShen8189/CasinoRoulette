@@ -3,13 +3,13 @@
  */
 public class RegularPlayer extends Player {
 
-    public RegularPlayer(String name, int token, int [] insideBet, String[] outsideBet) {
+    public RegularPlayer(String name, double token, int [] insideBet, String[] outsideBet) {
         super(name,token,insideBet,outsideBet);
         tokenValue = 5;
     }
 
 
-    public int getTokenValue(){
+    public double getTokenValue(){
         return (tokenValue*getToken());
     }
 
