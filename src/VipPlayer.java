@@ -4,8 +4,8 @@
 public class VipPlayer extends Player{
 
 
-        public VipPlayer(String name, double token, int [] insideBet, String[] outsideBet) {
-            super(name, token,insideBet,outsideBet);
+        public VipPlayer(String name, double token, String[] Bet) {
+            super(name, token,Bet);
             tokenValue = 10;
         }
 

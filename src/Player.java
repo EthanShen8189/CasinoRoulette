@@ -1,3 +1,4 @@
+import java.util.IntSummaryStatistics;
 import java.util.Scanner;
 
 /**
@@ -7,22 +8,19 @@ public class Player {
     private String name;
     private double token;
     protected int tokenValue;
-    protected int [] insideBet;
-    protected String [] outsideBet;
+    protected String [] Bet;
 
     public Player(){
         name = null;
         token = 0;
         tokenValue=0;
-        insideBet = new int [6];
-        outsideBet = new String [6];
+        Bet = new String [6];
     }
 
-    public Player(String name, double token, int[] insideBet, String [] outsideBet) {
+    public Player(String name, double token, String [] Bet) {
         this.name = name;
         this.token = token;
-        this.insideBet = insideBet;
-        this.outsideBet = outsideBet;
+        this.Bet = Bet;
     }
 
     public String getName() {
@@ -62,6 +60,12 @@ public class Player {
         setToken(5);
     }
 
+    public static void setBet(Player p){
+        Scanner kb = new Scanner(System.in);
+        String Bet = kb.nextLine();
+        p.Bet = Bet.split(" ");
+
+    }
 
 
 
