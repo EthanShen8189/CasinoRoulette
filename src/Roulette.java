@@ -6,6 +6,7 @@ import java.util.Random;
 public  class Roulette {
 
     protected static String [] numbers;
+    private static String [][] TableLayout = new String[3][13];
     protected static String [] blackNumber = new String[18];
     protected static String [] redNumber = new String[18];
     protected static String result;
@@ -31,6 +32,9 @@ public  class Roulette {
     protected static boolean Last12;
     protected static boolean First18;
     protected static boolean Last18;
+    protected static boolean FirstRow;
+    protected static boolean SecondRow;
+    protected static boolean LastRow;
 
     public Roulette() {
         this.numbers = new String [0];
@@ -72,6 +76,46 @@ public  class Roulette {
         redNumber[15] = "32";
         redNumber[16] = "34";
         redNumber[17] = "36";
+
+        TableLayout[0][0]=" ";
+        TableLayout[0][1]="3";
+        TableLayout[0][2]="6";
+        TableLayout[0][3]="9";
+        TableLayout[0][4]="12";
+        TableLayout[0][5]="15";
+        TableLayout[0][6]="18";
+        TableLayout[0][7]="21";
+        TableLayout[0][8]="24";
+        TableLayout[0][9]="27";
+        TableLayout[0][10]="30";
+        TableLayout[0][11]="33";
+        TableLayout[0][12]="36";
+        TableLayout[1][0]="0";
+        TableLayout[1][1]="2";
+        TableLayout[1][2]="5";
+        TableLayout[1][3]="8";
+        TableLayout[1][4]="11";
+        TableLayout[1][5]="14";
+        TableLayout[1][6]="17";
+        TableLayout[1][7]="20";
+        TableLayout[1][8]="23";
+        TableLayout[1][9]="26";
+        TableLayout[1][10]="29";
+        TableLayout[1][11]="32";
+        TableLayout[1][12]="35";
+        TableLayout[2][0]=" ";
+        TableLayout[2][1]="1";
+        TableLayout[2][2]="4";
+        TableLayout[2][3]="7";
+        TableLayout[2][4]="10";
+        TableLayout[2][5]="13";
+        TableLayout[2][6]="16";
+        TableLayout[2][7]="19";
+        TableLayout[2][8]="22";
+        TableLayout[2][9]="25";
+        TableLayout[2][10]="28";
+        TableLayout[2][11]="31";
+        TableLayout[2][12]="34";
 
         BlackNumber=false;
         RedNumber=false;
@@ -186,6 +230,36 @@ public  class Roulette {
         else
         return Last18 = false;
     }
+    
+    public static boolean isFirstRow(){
+        for(int i=0,j=1; j<13;j++) {
+            if (result.equals(TableLayout[i][j]))
+                return FirstRow = true;
+            else
+                FirstRow=false;
+        }
+            return FirstRow;
+    }
+
+    public static boolean isSecondRow(){
+        for(int i=1,j=1; j<13;j++) {
+            if (result.equals(TableLayout[i][j]))
+                SecondRow = true;
+            else
+                SecondRow=false;
+        }
+            return SecondRow;
+    }
+
+    public static boolean isLastRow(){
+        for(int i=2,j=1; j<13;j++) {
+            if (result.equals(TableLayout[i][j]))
+                LastRow=true;
+            else
+                LastRow=false;
+        }
+        return LastRow;
+    }
 
 
     public static void booleanCheck(){
@@ -198,160 +272,160 @@ public  class Roulette {
         Roulette.isLast12();
         Roulette.isFirst18();
         Roulette.isLast18();
+        Roulette.isFirstRow();
+        Roulette.isSecondRow();
+        Roulette.isLastRow();
     }
 
     public static void payOutCalculation(Player p){
         //if a Player just bet 1 time, then execute first IF statement.
         if((p.getTokenReduction() >0&& p.getTokenReduction()<1) || p.getTokenReduction() == 1) {   //If the Player's bet is between 0 to 1(Vip player gets 5% discount)
                                                                                     //therefore it is possible to have less than 1 bet (0.95 bet).
-            if (String.valueOf(p.Bet[0]).equals(String.valueOf(result)))            //If the Player's bet is a number and matches the winning number,
+            if (p.Bet[0].equals(result))            //If the Player's bet is a number and matches the winning number,
                                                                                     //Then he/her gets pay.
-                p.straight();
+                p.straight(p);
 
-            else if(EvenNumber == true && p.Bet[0].equalsIgnoreCase(Even) ||        //If the Player's bet is in outside the table,
-                    (OddNumber == true && p.Bet[0].equalsIgnoreCase(Odd)) ||        //For even,odd,black,red,first12,second12, he/her gets pay.
-                    (BlackNumber == true && p.Bet[0].equalsIgnoreCase(Black)) ||
-                    (RedNumber == true && p.Bet[0].equalsIgnoreCase(Red)) ||
-                    (First18 == true && p.Bet[0].equalsIgnoreCase(first18)) ||
-                    (Last18 == true && p.Bet[0].equalsIgnoreCase(last18)))
+            else {
+                if (EvenNumber == true && p.Bet[0].equalsIgnoreCase(Even) ||
+                     (OddNumber == true && p.Bet[0].equalsIgnoreCase(Odd)) ||
+                        (BlackNumber == true && p.Bet[0].equalsIgnoreCase(Black)) ||
+                        (RedNumber == true && p.Bet[0].equalsIgnoreCase(Red)) ||
+                        (First18 == true && p.Bet[0].equalsIgnoreCase(first18)) ||
+                        (Last18 == true && p.Bet[0].equalsIgnoreCase(last18))){
 
-                p.payOneTime();
 
-            else if((First12 == true && p.Bet[0].equalsIgnoreCase(first12)) ||
+                    p.payOneTime(p);
+                }
+                else if
+                    ((First12 == true && p.Bet[0].equalsIgnoreCase(first12)) ||
                         (Second12 == true && p.Bet[0].equalsIgnoreCase(second12)) ||
-                        (Last12 == true && p.Bet[0].equalsIgnoreCase(last12)) /*||
-                    String.valueOf(p.Bet[0]).equalsIgnoreCase(String.valueOf(firstRow)) ||
-                    String.valueOf(p.Bet[0]).equalsIgnoreCase(String.valueOf(secondRow)) ||
-                    String.valueOf(p.Bet[0]).equalsIgnoreCase(String.valueOf(lastRow))*/)
+                        (Last12 == true && p.Bet[0].equalsIgnoreCase(last12)) ||
+                        (FirstRow==true && p.Bet[0].equalsIgnoreCase(firstRow)) ||
+                        (SecondRow==true && p.Bet[0].equalsIgnoreCase(secondRow)) ||
+                        (LastRow==true && p.Bet[0].equalsIgnoreCase(lastRow))){
 
-                    p.payTwoTimes();
-            }
-
-
-        else if((p.getTokenReduction() > 1 && p.getTokenReduction()<2) || p.getTokenReduction() == 2){
-            for(int i=0; i<2;i++){
-                if (String.valueOf(p.Bet[i]).equals(result))
-
-                        p.split();
-                else if (EvenNumber == true && p.Bet[i].equalsIgnoreCase(Even) ||
-                            (OddNumber == true && p.Bet[i].equalsIgnoreCase(Odd)))
-
-                    p.payOneTime();
-
-                else if((BlackNumber == true && p.Bet[i].equalsIgnoreCase(Black)) ||
-                            (RedNumber == true && p.Bet[i].equalsIgnoreCase(Red)))
-
-                    p.payOneTime();
-
-                else if((First18 == true && p.Bet[i].equalsIgnoreCase(first18)) ||
-                            (Last18 == true && p.Bet[i].equalsIgnoreCase(last18)))
-
-                    p.payOneTime();
-
-                else if((First12 == true && p.Bet[i].equalsIgnoreCase(first12)) ||
-                            (Second12 == true && p.Bet[i].equalsIgnoreCase(second12)) ||
-                            (Last12 == true && p.Bet[i].equalsIgnoreCase(last12)))
-
-                    p.payTwoTimes();
-
-                    /*while (String.valueOf(p.Bet[i]).equalsIgnoreCase(String.valueOf(firstRow)) ||
-                        String.valueOf(p.Bet[i]).equalsIgnoreCase(String.valueOf(secondRow)) ||
-                        String.valueOf(p.Bet[i]).equalsIgnoreCase(String.valueOf(lastRow)))
-
-                        Player.payTwoTimes(p);*/
+                    p.payTwoTimes(p);
                 }
             }
 
-        else if((p.getTokenReduction() > 2 && p.getTokenReduction()<3) || p.getTokenReduction() == 3){
-            for(int i=0; i<3;i++){
-                if (String.valueOf(p.Bet[i]).equalsIgnoreCase(String.valueOf(result)))
-
-                    p.street();
-
-                else if (EvenNumber == true && p.Bet[i].equalsIgnoreCase(Even) ||
-                        (OddNumber == true && p.Bet[i].equalsIgnoreCase(Odd)))
-
-                    p.payOneTime();
-
-                else if((BlackNumber == true && p.Bet[i].equalsIgnoreCase(Black)) ||
-                        (RedNumber == true && p.Bet[i].equalsIgnoreCase(Red)))
-
-                    p.payOneTime();
-
-                else if((First18 == true && p.Bet[i].equalsIgnoreCase(first18)) ||
-                        (Last18 == true && p.Bet[i].equalsIgnoreCase(last18)))
-
-                    p.payOneTime();
-
-                else if((First12 == true && p.Bet[i].equalsIgnoreCase(first12)) ||
-                        (Second12 == true && p.Bet[i].equalsIgnoreCase(second12)) ||
-                        (Last12 == true && p.Bet[i].equalsIgnoreCase(last12)))
-
-                    p.payTwoTimes();
-
-                    /*while (String.valueOf(p.Bet[i]).equalsIgnoreCase(String.valueOf(firstRow)) ||
-                        String.valueOf(p.Bet[i]).equalsIgnoreCase(String.valueOf(secondRow)) ||
-                        String.valueOf(p.Bet[i]).equalsIgnoreCase(String.valueOf(lastRow)))
-
-                        Player.payTwoTimes(p);*/
-            }
-            }
-
-        else if((p.getTokenReduction() > 3 && p.getTokenReduction() < 4) || p.getTokenReduction() == 4){
-            for(int i=0; i<4;i++){
-                if (String.valueOf(p.Bet[i]).equalsIgnoreCase(String.valueOf(result)))
-
-                    p.square();
-
-                else if (EvenNumber == true && p.Bet[i].equalsIgnoreCase(Even) ||
-                        (OddNumber == true && p.Bet[i].equalsIgnoreCase(Odd)))
-
-                    p.payOneTime();
-
-                else if((BlackNumber == true && p.Bet[i].equalsIgnoreCase(Black)) ||
-                        (RedNumber == true && p.Bet[i].equalsIgnoreCase(Red)))
-
-                    p.payOneTime();
-
-                else if((First18 == true && p.Bet[i].equalsIgnoreCase(first18)) ||
-                        (Last18 == true && p.Bet[i].equalsIgnoreCase(last18)))
-
-                    p.payOneTime();
-
-                else if((First12 == true && p.Bet[i].equalsIgnoreCase(first12)) ||
-                        (Second12 == true && p.Bet[i].equalsIgnoreCase(second12)) ||
-                        (Last12 == true && p.Bet[i].equalsIgnoreCase(last12)))
-
-                    p.payTwoTimes();
-            }
         }
 
+
+        else if((p.getTokenReduction() > 1 && p.getTokenReduction()<2) || p.getTokenReduction() == 2) {
+            for (int i = 0; i < 2; i++) {
+                if (result.equals(p.Bet[i]))
+
+                    p.split(p);
+
+                else {
+                    if (EvenNumber == true && p.Bet[i].equalsIgnoreCase(Even) ||
+                            (OddNumber == true && p.Bet[i].equalsIgnoreCase(Odd)) ||
+                            (BlackNumber == true && p.Bet[i].equalsIgnoreCase(Black)) ||
+                            (RedNumber == true && p.Bet[i].equalsIgnoreCase(Red)) ||
+                            (First18 == true && p.Bet[i].equalsIgnoreCase(first18)) ||
+                            (Last18 == true && p.Bet[i].equalsIgnoreCase(last18))){
+
+
+                        p.payOneTime(p);
+                    }
+                    else if
+                            ((First12 == true && p.Bet[i].equalsIgnoreCase(first12)) ||
+                                    (Second12 == true && p.Bet[i].equalsIgnoreCase(second12)) ||
+                                    (Last12 == true && p.Bet[i].equalsIgnoreCase(last12)) ||
+                                    (FirstRow==true && p.Bet[i].equalsIgnoreCase(firstRow)) ||
+                                    (SecondRow==true && p.Bet[i].equalsIgnoreCase(secondRow)) ||
+                                    (LastRow==true && p.Bet[i].equalsIgnoreCase(lastRow))){
+
+                        p.payTwoTimes(p);
+                    }
+                }
+            }
+        }
+        else if((p.getTokenReduction() > 2 && p.getTokenReduction()<3) || p.getTokenReduction() == 3) {
+            for (int i = 0; i < 3; i++) {
+                if (result.equals(p.Bet[i]))
+
+                    p.street(p);
+
+                else {
+                    if (EvenNumber == true && p.Bet[i].equalsIgnoreCase(Even) ||
+                            (OddNumber == true && p.Bet[i].equalsIgnoreCase(Odd)) ||
+                            (BlackNumber == true && p.Bet[i].equalsIgnoreCase(Black)) ||
+                            (RedNumber == true && p.Bet[i].equalsIgnoreCase(Red)) ||
+                            (First18 == true && p.Bet[i].equalsIgnoreCase(first18)) ||
+                            (Last18 == true && p.Bet[i].equalsIgnoreCase(last18))) {
+
+
+                        p.payOneTime(p);
+                    } else if
+                            ((First12 == true && p.Bet[i].equalsIgnoreCase(first12)) ||
+                                    (Second12 == true && p.Bet[i].equalsIgnoreCase(second12)) ||
+                                    (Last12 == true && p.Bet[i].equalsIgnoreCase(last12)) ||
+                                    (FirstRow == true && p.Bet[i].equalsIgnoreCase(firstRow)) ||
+                                    (SecondRow == true && p.Bet[i].equalsIgnoreCase(secondRow)) ||
+                                    (LastRow == true && p.Bet[i].equalsIgnoreCase(lastRow))) {
+
+                        p.payTwoTimes(p);
+                    }
+                }
+            }
+        }
+        else if((p.getTokenReduction() > 3 && p.getTokenReduction() < 4) || p.getTokenReduction() == 4) {
+            for (int i = 0; i < 4; i++) {
+                if (result.equals(p.Bet[i]))
+
+                    p.square(p);
+
+                else {
+                    if (EvenNumber == true && p.Bet[i].equalsIgnoreCase(Even) ||
+                            (OddNumber == true && p.Bet[i].equalsIgnoreCase(Odd)) ||
+                            (BlackNumber == true && p.Bet[i].equalsIgnoreCase(Black)) ||
+                            (RedNumber == true && p.Bet[i].equalsIgnoreCase(Red)) ||
+                            (First18 == true && p.Bet[i].equalsIgnoreCase(first18)) ||
+                            (Last18 == true && p.Bet[i].equalsIgnoreCase(last18))) {
+
+
+                        p.payOneTime(p);
+                    } else if
+                            ((First12 == true && p.Bet[i].equalsIgnoreCase(first12)) ||
+                                    (Second12 == true && p.Bet[i].equalsIgnoreCase(second12)) ||
+                                    (Last12 == true && p.Bet[i].equalsIgnoreCase(last12)) ||
+                                    (FirstRow == true && p.Bet[i].equalsIgnoreCase(firstRow)) ||
+                                    (SecondRow == true && p.Bet[i].equalsIgnoreCase(secondRow)) ||
+                                    (LastRow == true && p.Bet[i].equalsIgnoreCase(lastRow))) {
+
+                        p.payTwoTimes(p);
+                    }
+                }
+            }
+        }
         else if((p.getTokenReduction() > 4 && p.getTokenReduction() < 5) || p.getTokenReduction() == 5){
             for(int i=0; i<5;i++){
-                if (String.valueOf(p.Bet[i]).equalsIgnoreCase(String.valueOf(result)))
+                if (result.equals(p.Bet[i]))
 
-                    p.topLine();
+                    p.topLine(p);
 
-                else if (EvenNumber == true && p.Bet[i].equalsIgnoreCase(Even) ||
-                        (OddNumber == true && p.Bet[i].equalsIgnoreCase(Odd)))
+                else {
+                    if (EvenNumber == true && p.Bet[i].equalsIgnoreCase(Even) ||
+                            (OddNumber == true && p.Bet[i].equalsIgnoreCase(Odd)) ||
+                            (BlackNumber == true && p.Bet[i].equalsIgnoreCase(Black)) ||
+                            (RedNumber == true && p.Bet[i].equalsIgnoreCase(Red)) ||
+                            (First18 == true && p.Bet[i].equalsIgnoreCase(first18)) ||
+                            (Last18 == true && p.Bet[i].equalsIgnoreCase(last18))) {
 
-                    p.payOneTime();
 
-                else if((BlackNumber == true && p.Bet[i].equalsIgnoreCase(Black)) ||
-                        (RedNumber == true && p.Bet[i].equalsIgnoreCase(Red)))
+                        p.payOneTime(p);
+                    } else if
+                            ((First12 == true && p.Bet[i].equalsIgnoreCase(first12)) ||
+                                    (Second12 == true && p.Bet[i].equalsIgnoreCase(second12)) ||
+                                    (Last12 == true && p.Bet[i].equalsIgnoreCase(last12)) ||
+                                    (FirstRow == true && p.Bet[i].equalsIgnoreCase(firstRow)) ||
+                                    (SecondRow == true && p.Bet[i].equalsIgnoreCase(secondRow)) ||
+                                    (LastRow == true && p.Bet[i].equalsIgnoreCase(lastRow))) {
 
-                    p.payOneTime();
-
-                else if((First18 == true && p.Bet[i].equalsIgnoreCase(first18)) ||
-                        (Last18 == true && p.Bet[i].equalsIgnoreCase(last18)))
-
-                    p.payOneTime();
-
-                else if((First12 == true && p.Bet[i].equalsIgnoreCase(first12)) ||
-                        (Second12 == true && p.Bet[i].equalsIgnoreCase(second12)) ||
-                        (Last12 == true && p.Bet[i].equalsIgnoreCase(last12)))
-
-                    p.payTwoTimes();
+                        p.payTwoTimes(p);
+                    }
+                }
             }
         }
     }

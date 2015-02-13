@@ -15,33 +15,51 @@ public class VipPlayer extends Player{
         }
 
     @Override
-    public void straight() {
-        setToken(getToken()+35*1.1);
+    public void straight(Player p){
+        p.token = p.token + 35*1.1;
+        System.out.println("It's a Straight! Congratulation! VIP Player " + p.getName()+" won 35 tokens!");
     }
 
     @Override
-    public void split() {
-        setToken(getToken() + 17 * 1.1);
+    public void split(Player p){
+        p.token = p.token + 17*1.1;
+        System.out.println("It's a Split! Congratulation! VIP Player " + p.getName()+" won 17 tokens!");
     }
 
     @Override
-    public void street() {
-        setToken(getToken() + 11 * 1.1);
+    public void street(Player p){
+        p.token = p.token + 11*1.1;
+        System.out.println("It's a Street! Congratulation! VIP Player " + p.getName()+" won 11 tokens!");
     }
 
     @Override
-    public void square() {
-        setToken(getToken() + 8 * 1.1);
+    public void square(Player p){
+        p.token = p.token + 8*1.1;
+        System.out.println("It's a Square! Congratulation! VIP Player " + p.getName()+" won 8 tokens!");
     }
 
     @Override
-    public void topLine() {
-        setToken(getToken() + 6 * 1.1);
+    public void topLine(Player p){
+        p.token = p.token + 6*1.1;
+        System.out.println("It's a TopLine! Congratulation! VIP Player " + p.getName()+" won 6 tokens!");
     }
 
     @Override
-    public void doubleStreet() {
-        setToken(getToken() + 5 * 1.1);
+    public void doubleStreet(Player p){
+        p.token = p.token + 5*1.1;
+        System.out.println("It's a DoubleStreet! Congratulation! VIP Player " + p.getName()+" won 5 tokens!");
+    }
+
+    @Override
+    public void payOneTime(Player p){
+        p.token = p.token + 1.1;
+        System.out.println("Congratulation! VIP Player " + p.getName()+" won 1 token!");
+    }
+
+    @Override
+    public void payTwoTimes(Player p){
+        p.token = p.token + 2*1.1;
+        System.out.println("It's a Square! Congratulation! VIP Player " + p.getName()+" won 2 tokens!");
     }
 
 

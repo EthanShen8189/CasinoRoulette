@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+import java.util.DoubleSummaryStatistics;
 import java.util.Scanner;
 
 /**
@@ -29,44 +31,50 @@ public class Player {
     }
 
     public double getToken() {
-        return token;
+        double formattedToken;
+        DecimalFormat decim = new DecimalFormat("#.##");
+        formattedToken = Double.parseDouble(decim.format(token));
+        return formattedToken;
     }
 
-    public void setToken(double t) {
-        token = t + getToken();
+    public void straight(Player p){
+        p.token = p.token + 1+ 35;
+        System.out.println("Congratulation! " + p.getName()+" won 35 tokens!");
     }
 
-    //TODO: implement the payout method.
-    public void straight(){
-        token = token + 35;
+    public void split(Player p){
+        p.token = p.token + 17 + 1;
+        System.out.println("Congratulation! " + p.getName()+" won 17 tokens!");
     }
 
-    public void split(){
-        token = token + 17;
+    public void street(Player p){
+        p.token = p.token + 11 + 1;
+        System.out.println("Congratulation! " + p.getName()+" won 11 tokens!");
     }
 
-    public void street(){
-        token = token + 11;
+    public void square(Player p){
+        p.token = p.token + 8 + 1;
+        System.out.println("Congratulation! " + p.getName()+" won 8 tokens!");
     }
 
-    public void square(){
-        token = token + 8;
+    public void topLine(Player p){
+        p.token = p.token + 6 + 1;
+        System.out.println("Congratulation! " + p.getName()+" won 6 tokens!");
     }
 
-    public void topLine(){
-        token = token + 6;
+    public void doubleStreet(Player p){
+        p.token = p.token + 5 + 1;
+        System.out.println("Congratulation! " + p.getName()+" won 5 tokens!");
     }
 
-    public void doubleStreet(){
-        token = token + 5;
+    public void payOneTime(Player p){
+        p.token = p.token + 1 + 1;
+        System.out.println("Congratulation! " + p.getName()+" won 1 token!");
     }
 
-    public void payOneTime(){
-        token = token + 1;
-    }
-
-    public void payTwoTimes(){
-        token = token + 2;
+    public void payTwoTimes(Player p){
+        p.token = p.token + 2 + 1;
+        System.out.println("Congratulation! " + p.getName()+" won 2 tokens!");
     }
 
     public static void setBet(Player p){
