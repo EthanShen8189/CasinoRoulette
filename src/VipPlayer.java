@@ -4,10 +4,9 @@
 public class VipPlayer extends Player{
 
 
-        public VipPlayer(String name, double token, String[] Bet) {
-            super(name, token,Bet);
+        public VipPlayer(String name, double token, String[] Bet,double tokenReduction) {
+            super(name, token,Bet,tokenReduction);
             tokenValue = 10;
-            tokenReduction =0;
         }
 
 
@@ -45,14 +44,18 @@ public class VipPlayer extends Player{
         setToken(getToken() + 5 * 1.1);
     }
 
-    @Override
+
     public double reduceToken() {
         for(int i=0;i<Bet.length;i++) {
             if (Bet[i] != null) {
                 tokenReduction++;
             }
         }
-        return tokenReduction * .95;
+        return tokenReduction;
+    }
+
+    public static void setReducedToken(Player p){
+        p.token = p.token - p.tokenReduction*0.95;
     }
 
     @Override

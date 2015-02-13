@@ -3,10 +3,9 @@
  */
 public class RegularPlayer extends Player {
 
-    public RegularPlayer(String name, double token, String[] Bet) {
-        super(name,token,Bet);
+    public RegularPlayer(String name, double token, String[] Bet,double tokenReduction) {
+        super(name,token,Bet,tokenReduction);
         tokenValue = 5;
-        tokenReduction=0;
     }
 
 

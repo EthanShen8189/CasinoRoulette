@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.Random;
 
 /**
  * Created by Racoonsy on 15-02-04.
@@ -7,8 +6,6 @@ import java.util.Random;
 public class EuropeanRoulette extends Roulette {
 
     public static String[] numbers = new String[37];
-    private static String result;
-
     public EuropeanRoulette() {
         numbers[0] = "0";
         numbers[1] = "32";
@@ -47,18 +44,12 @@ public class EuropeanRoulette extends Roulette {
         numbers[34] = "35";
         numbers[35] = "3";
         numbers[36] = "26";
+
     }
 
-    public static void setWinningNumber() {
-        int index = new Random().nextInt(37);
-        result = numbers[index];
-    }
 
-    public static String getWinningNumber(){
-        return result;
-    }
-
-    public static String[] getNumbers() {
+    @Override
+    public String[] getNumbers() {
         return numbers;
     }
 

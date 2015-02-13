@@ -1,4 +1,3 @@
-import java.util.IntSummaryStatistics;
 import java.util.Scanner;
 
 /**
@@ -7,7 +6,7 @@ import java.util.Scanner;
 public class Player {
     private String name;
     protected double tokenReduction;
-    private double token;
+    protected double token;
     protected int tokenValue;
     protected String [] Bet;
 
@@ -18,10 +17,11 @@ public class Player {
         Bet = new String [6];
     }
 
-    public Player(String name, double token, String [] Bet) {
+    public Player(String name, double token, String [] Bet,double tokenReduction) {
         this.name = name;
         this.token = token;
         this.Bet = Bet;
+        this.tokenReduction = tokenReduction;
     }
 
     public String getName() {
@@ -38,27 +38,35 @@ public class Player {
 
     //TODO: implement the payout method.
     public void straight(){
-        setToken(35);
+        token = token + 35;
     }
 
     public void split(){
-        setToken(17);
+        token = token + 17;
     }
 
     public void street(){
-        setToken(11);
+        token = token + 11;
     }
 
     public void square(){
-        setToken(8);
+        token = token + 8;
     }
 
     public void topLine(){
-        setToken(6);
+        token = token + 6;
     }
 
     public void doubleStreet(){
-        setToken(5);
+        token = token + 5;
+    }
+
+    public void payOneTime(){
+        token = token + 1;
+    }
+
+    public void payTwoTimes(){
+        token = token + 2;
     }
 
     public static void setBet(Player p){
@@ -69,18 +77,20 @@ public class Player {
 
     public double reduceToken(){
         for(int i=0;i<Bet.length;i++) {
-            if (Bet[i] != null) {
+            if (String.valueOf(Bet[i]) != null) {
                 tokenReduction++;
             }
         }
         return tokenReduction;
     }
 
-    public void setReducedToken(){
-        token = token - tokenReduction;
+    public double getTokenReduction() {
+        return tokenReduction;
     }
 
-
+    public static void setReducedToken(Player p){
+        p.token = p.token - p.tokenReduction;
+    }
 
     @Override
     public String toString() {
