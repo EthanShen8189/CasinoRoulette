@@ -85,6 +85,25 @@ public class Dealer {
 
         }
 
+        for(int i = 0; i<sortedPlayers.length; i++){
+            if(sortedPlayers[i] instanceof VipPlayer){
+                sortedPlayers[i].reduceToken();
+                sortedPlayers[i].setReducedToken();
+            }
+            else if(sortedPlayers[i] instanceof RegularPlayer){
+                sortedPlayers[i].reduceToken();
+                sortedPlayers[i].setReducedToken();
+            }
+        }
+
+        System.out.println(Lucy.toString());
+        System.out.println(Nancy.toString());
+        System.out.println(Peter.toString());
+        System.out.println(Jason.toString());
+        System.out.println(Smith.toString());
+        System.out.println(Victoria.toString());
+
+
             if (tableChoice == 0) {
                 EuroTable.setWinningNumber();
                 System.out.println("========================================================" +

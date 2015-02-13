@@ -6,6 +6,7 @@ import java.util.Scanner;
  */
 public class Player {
     private String name;
+    protected double tokenReduction;
     private double token;
     protected int tokenValue;
     protected String [] Bet;
@@ -64,7 +65,19 @@ public class Player {
         Scanner kb = new Scanner(System.in);
         String Bet = kb.nextLine();
         p.Bet = Bet.split(" ");
+    }
 
+    public double reduceToken(){
+        for(int i=0;i<Bet.length;i++) {
+            if (Bet[i] != null) {
+                tokenReduction++;
+            }
+        }
+        return tokenReduction;
+    }
+
+    public void setReducedToken(){
+        token = token - tokenReduction;
     }
 
 

@@ -7,6 +7,7 @@ public class VipPlayer extends Player{
         public VipPlayer(String name, double token, String[] Bet) {
             super(name, token,Bet);
             tokenValue = 10;
+            tokenReduction =0;
         }
 
 
@@ -42,6 +43,16 @@ public class VipPlayer extends Player{
     @Override
     public void doubleStreet() {
         setToken(getToken() + 5 * 1.1);
+    }
+
+    @Override
+    public double reduceToken() {
+        for(int i=0;i<Bet.length;i++) {
+            if (Bet[i] != null) {
+                tokenReduction++;
+            }
+        }
+        return tokenReduction * .95;
     }
 
     @Override

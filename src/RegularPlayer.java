@@ -6,6 +6,7 @@ public class RegularPlayer extends Player {
     public RegularPlayer(String name, double token, String[] Bet) {
         super(name,token,Bet);
         tokenValue = 5;
+        tokenReduction=0;
     }
 
 
