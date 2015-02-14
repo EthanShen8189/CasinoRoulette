@@ -1,5 +1,8 @@
 /**
- * Created by Yang on 06/02/2015.
+ * COMP249 Assignment2 CasinoRoulette-Roulette Class-RegularPlayer
+ *
+ * This is RegularPlayer Class, this class is the inherited class from Player.
+ * @author YangShen(7159390)
  */
 public class RegularPlayer extends Player {
 
@@ -14,7 +17,10 @@ public class RegularPlayer extends Player {
     }
 
 
-
+    /**
+     *
+     * @return Player's detail.
+     */
     @Override
     public String toString() {
         return ("Player "+ getName() +", the remaining token number is: "

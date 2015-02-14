@@ -2,8 +2,9 @@ import java.util.Arrays;
 
 /**
  * COMP249 Assignment2 CasinoRoulette-Roulette Class-EuropeanRoulette
- * @author YangShen(7159390)
+ *
  * This is EuropeanRoulette Class, this class is the inherited class from Roulette.
+ * @author YangShen(7159390)
  */
 public class EuropeanRoulette extends Roulette {
 
@@ -101,7 +102,8 @@ public class EuropeanRoulette extends Roulette {
     }
 
     /**
-     *
+     *This method print out the EuropeanTable layout.
+     * It also print the outside bet options for players.
      */
     public static void toStringTableLayout(){
         System.out.print("European Table Layout:\n");
@@ -117,6 +119,10 @@ public class EuropeanRoulette extends Roulette {
                 "\nPlease enter the same word when placing your bet.\n");
     }
 
+    /**
+     * This method shows the wheel number.
+     * @return A String displaying the wheel number.
+     */
     public String toString() {
         return "Ethan's European roulette v1.0 Feb 13 2015\n" +
                 "Wheel: " + Arrays.toString(numbers);

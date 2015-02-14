@@ -1,7 +1,15 @@
 
 /**
- * Created by Racoonsy on 15-02-04.
+ * COMP249 Assignment2 - CasinoRoulette -Dealer Class(driver)
+ *
+ * This assignment is to design a casino game system similar to "Roulette Game".
+ * Players places the bet on inside or outside the table.
+ * Inside table contains numbers from 0 to 36, outside table contains number's characteristic(odd,even,etc)
+ * The programme sets up the table for user, then record the player's bet and calculate winning and announcement.
+ * The programme will terminated after 10 times run.
+ * @author YangShen(7159390)
  */
+
 public class Dealer {
 
 
@@ -71,6 +79,7 @@ public class Dealer {
                 System.out.println("===================================================");
             }
 
+        //Print out all players detail.
             System.out.println(Lucy.toString());
             System.out.println(Nancy.toString());
             System.out.println(Peter.toString());
@@ -79,8 +88,8 @@ public class Dealer {
             System.out.println(Victoria.toString());
             System.out.println("===================================================");
 
-            //Ask Player to place bets, then store the bets into a String array.
-            //VIP Players bet first, followed by RegularPlayer.
+        //Ask Player to place bets, then store the bets into a String array.
+        //VIP Players bet first, followed by RegularPlayer.
             for (int i = 0; i < sortedPlayers.length; i++) {
                 if (sortedPlayers[i] instanceof VipPlayer) {
                     System.out.print("VIP Player, " + sortedPlayers[i].getName()
@@ -94,7 +103,7 @@ public class Dealer {
 
             }
 
-            //Reduce the bet token based on the number of Bets they have placed.
+        //Reduce the bet token based on the number of Bets they have placed.
             for (int i = 0; i < sortedPlayers.length; i++) {
                 if (sortedPlayers[i] instanceof VipPlayer) {
                     sortedPlayers[i].reduceToken();
@@ -105,11 +114,11 @@ public class Dealer {
                 }
             }
 
-            //Setting the winning number for the chosen table.
+        //Setting the winning number for the chosen table.
             Roulette.setWinningNumber();
             Roulette.booleanCheck();
 
-            //Calculate payment and display announcement.
+        //Calculate payment and display announcement.
             if (Roulette.getTableChoice() == 0) {
                 System.out.println("========================================================" +
                         "\nThe winning number is: " + EuroTable.getWinningNumber());
@@ -124,12 +133,14 @@ public class Dealer {
                 }
             }
 
-            //Reset player's token reduction to 0.
+        //Reset player's token reduction to 0.
             for (int i = 0; i < sortedPlayers.length; i++)
                 sortedPlayers[i].tokenReduction = 0;
 
             playCounter++;
         }
+
+        //Programme terminates after 10 times run.
         while (playCounter<10);
     }
 

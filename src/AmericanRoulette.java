@@ -1,8 +1,12 @@
 import java.util.Arrays;
 
 /**
- * Created by Racoonsy on 15-02-04.
+ * COMP249 Assignment2 CasinoRoulette-Roulette Class-AmericanRoulette
+ *
+ * This is AmericanRoulette Class, this class is the inherited class from Roulette.
+ * @author YangShen(7159390)
  */
+
 public class AmericanRoulette extends Roulette {
 
     public static String[] numbers = new String[38];
@@ -89,13 +93,21 @@ public class AmericanRoulette extends Roulette {
 
     }
 
+    /**
+     * This method overridden the getNumber() from its super class.
+     * @return the numbers of wheel.
+     */
     @Override
     public String[] getNumbers() {
         return numbers;
     }
 
-
-
+    /**
+     * This method calculates all the logic when Player.Bet[] and result are set.
+     * Depends on the result, the method loop each player's bet to find a match result.
+     * Player gets paid if player's bet satisfied the logic condition(Even,Odd,Black,Red,etc).
+     * @param p the Player who is about to calculated the winning.
+     */
     public static void payOutCalculation(Player p) {
         Roulette.isEvenNumber();
         Roulette.isOddNumber();
@@ -286,6 +298,10 @@ public class AmericanRoulette extends Roulette {
                     }
     }
 
+    /**
+     *This method print out the AmericanTable layout.
+     * It also print the outside bet options for players.
+     */
     public static void toStringTableLayout(){
         System.out.print("American Table Layout:\n");
         for(int i=0; i<3; i++){
@@ -301,6 +317,10 @@ public class AmericanRoulette extends Roulette {
                 "\nPlease enter the same word when placing your bet.\n");
     }
 
+    /**
+     * This method shows the wheel number.
+     * @return A String displaying the wheel number.
+     */
     public String toString() {
         return "Ethan's American roulette v1.0 Feb 13 2015\n" +
                 "Wheel: " + Arrays.toString(numbers);

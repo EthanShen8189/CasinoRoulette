@@ -3,8 +3,9 @@ import java.util.Scanner;
 
 /**
  * COMP249 Assignment2 CasinoRoulette-Player Class
- * @author YangShen(7159390)
+ *
  * This is Player Class, this class is the super class of all Player object.
+ * @author YangShen(7159390)
  */
 
 

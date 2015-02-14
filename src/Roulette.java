@@ -2,8 +2,9 @@ import java.util.Random;
 
 /**
  * COMP249 Assignment2 CasinoRoulette-Roulette Class
- * @author YangShen(7159390)
+ *
  * This is Roulette Class, this class is the super class of all roulette object.
+ * @author YangShen(7159390)
  */
 public  class Roulette {
 
