@@ -125,7 +125,8 @@ public class Dealer {
                 for (int i = 0; i < sortedPlayers.length; i++) {
                     Roulette.payOutCalculation(sortedPlayers[i]);
                 }
-            } else {
+            }
+            else {
                 System.out.println("========================================================" +
                         "\nThe winning number is: " + AmerTable.getWinningNumber());
                 for (int i = 0; i < sortedPlayers.length; i++) {
