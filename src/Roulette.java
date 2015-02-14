@@ -1,7 +1,9 @@
 import java.util.Random;
 
 /**
- * Created by Racoonsy on 15-02-04.
+ * COMP249 Assignment2 CasinoRoulette-Roulette Class
+ * @author YangShen(7159390)
+ * This is Roulette Class, this class is the super class of all roulette object.
  */
 public  class Roulette {
 
@@ -129,19 +131,37 @@ public  class Roulette {
 
     }
 
+    /**
+     * This method accesses roulette's all number.
+     * @return The number of roulette.
+     */
     public String[] getNumbers() {
         return numbers;
     }
 
+    /**
+     * This method accesses the number of table choice.
+     * @return The number of tableChoice.
+     */
     public static int getTableChoice() {
         return tableChoice;
     }
 
+    /**
+     * This method randomizes a number between 0 and 1.
+     * The number 0 represent the table is chosen to be European Roulette.
+     * The number 1 represent the table is chosen to be American Roulette.
+     */
     public static void tableChoice(){
         Random selectTable = new Random();
         tableChoice = selectTable.nextInt(2);
     }
 
+    /**
+     * This method takes the value of tableChoice to determine which set of number system should be use for setting winning number.
+     * If it is European, the method randomize a number between 0 to 36 as the index of the table's number[].
+     * If it is American, the method randomize a number between 0 to 37 as the index of the table's number[].
+     */
     public static void setWinningNumber(){
         if (tableChoice == 0) {
             int index = new Random().nextInt(37);
@@ -155,10 +175,18 @@ public  class Roulette {
 
     }
 
+    /**
+     * This method cast the result from String to Integer.
+     * @return  An int which is the integer value of result.
+     */
     public static int getWinningNumber(){
         return Integer.parseInt(result);
     }
 
+    /**
+     * This method determine the result is an element of BlackNumber.
+     * @return true if it is an element of BlackNumber, false if it is not an element of BlackNumber.
+     */
     public static boolean isBlackNumber(){
         for(int i=0; i<blackNumber.length;i++) {
             if (result.equals(blackNumber[i]))
@@ -167,6 +195,10 @@ public  class Roulette {
         return BlackNumber=false;
     }
 
+    /**
+     * This method determine the result is an element of RedNumber.
+     * @return true if it is an element of RedNumber, false if it is not an element of RedNumber.
+     */
     public static boolean isRedNumber() {
         for (int i = 0; i < redNumber.length; i++)
             if (result.equals(redNumber[i])) {
@@ -175,6 +207,10 @@ public  class Roulette {
         return RedNumber=false;
     }
 
+    /**
+     * This method determine the result is an even number.
+     * @return true if it is an even number, false if it is not an even number.
+     */
     public static boolean isEvenNumber(){
         if (Roulette.getWinningNumber()%2 == 0) {
             return EvenNumber = true;
@@ -183,6 +219,10 @@ public  class Roulette {
         return EvenNumber = false;
     }
 
+    /**
+     * This method determine the result is an odd number.
+     * @return true if it is an odd number, false if it is not an odd number.
+     */
     public static boolean isOddNumber(){
         if (Roulette.getWinningNumber()%2 == 1) {
             return OddNumber = true;
@@ -191,6 +231,10 @@ public  class Roulette {
         return OddNumber = false;
     }
 
+    /**
+     * This method determine the result is between 1 to 12.
+     * @return true if it is between 1 to 12, false if it is not between 1 to 12.
+     */
     public static boolean isFirst12(){
         if(Integer.parseInt(result)>0 && Integer.parseInt(result)<=12){
             return First12 = true;
@@ -199,6 +243,10 @@ public  class Roulette {
         return First12 = false;
     }
 
+    /**
+     * This method determine the result is between 12 to 24.
+     * @return true if it is between 12 to 24, false if it is not between 12 to 24.
+     */
     public static boolean isSecond12(){
         if(Integer.parseInt(result)>12 && Integer.parseInt(result)<=24){
             return Second12 = true;
@@ -207,6 +255,10 @@ public  class Roulette {
         return Second12 = false;
     }
 
+    /**
+     * This method determine the result is between 24 to 36.
+     * @return true if it is between 24 to 36, false if it is not between 24 to 36.
+     */
     public static boolean isLast12(){
         if(Integer.parseInt(result)>24 && Integer.parseInt(result)<=36){
             return Last12 = true;
@@ -215,6 +267,10 @@ public  class Roulette {
         return Last12 = false;
     }
 
+    /**
+     * This method determine the result is between 1 to 18.
+     * @return true if it is between 1 to 18, false if it is not between 1 to 18.
+     */
     public static boolean isFirst18(){
         if(Integer.parseInt(result)>0 && Integer.parseInt(result)<=18){
             return First18 = true;
@@ -223,6 +279,10 @@ public  class Roulette {
         return First18 = false;
     }
 
+    /**
+     * This method determine the result is between 18 to 36.
+     * @return true if it is between 18 to 36, false if it is not between 18 to 36.
+     */
     public static boolean isLast18(){
         if(Integer.parseInt(result)>18 && Integer.parseInt(result)<=36){
             return Last18 = true;
@@ -230,7 +290,11 @@ public  class Roulette {
         else
         return Last18 = false;
     }
-    
+
+    /**
+     * This method determine the result is an element of tableLayout[][] from tableLayout[0][1] to tableLayout[0][13].
+     * @return true if it is is an element of tableLayout[][] from tableLayout[0][1] to tableLayout[0][13], false otherwise.
+     */
     public static boolean isFirstRow(){
         for(int i=0,j=1; j<13;j++) {
             if (result.equals(TableLayout[i][j]))
@@ -241,6 +305,10 @@ public  class Roulette {
             return FirstRow;
     }
 
+    /**
+     * This method determine the result is an element of tableLayout[][] from tableLayout[1][1] to tableLayout[1][13].
+     * @return true if it is is an element of tableLayout[][] from tableLayout[1][1] to tableLayout[1][13], false otherwise.
+     */
     public static boolean isSecondRow(){
         for(int i=1,j=1; j<13;j++) {
             if (result.equals(TableLayout[i][j]))
@@ -251,6 +319,10 @@ public  class Roulette {
             return SecondRow;
     }
 
+    /**
+     * This method determine the result is an element of tableLayout[][] from tableLayout[2][1] to tableLayout[2][13].
+     * @return true if it is is an element of tableLayout[][] from tableLayout[2][1] to tableLayout[2][13], false otherwise.
+     */
     public static boolean isLastRow(){
         for(int i=2,j=1; j<13;j++) {
             if (result.equals(TableLayout[i][j]))
@@ -261,7 +333,9 @@ public  class Roulette {
         return LastRow;
     }
 
-
+    /**
+     * This method mutates all the boolean value in Roulette class
+     */
     public static void booleanCheck(){
         Roulette.isEvenNumber();
         Roulette.isOddNumber();
@@ -277,6 +351,12 @@ public  class Roulette {
         Roulette.isLastRow();
     }
 
+    /**
+     * This method calculates all the logic when Player.Bet[] and result are set.
+     * Depends on the result, the method loop each player's bet to find a match result.
+     * Player gets paid if player's bet satisfied the logic condition(Even,Odd,Black,Red,etc).
+     * @param p the Player who is about to calculated the winning.
+     */
     public static void payOutCalculation(Player p){
         //if a Player just bet 1 time, then execute first IF statement.
         if((p.getTokenReduction() >0&& p.getTokenReduction()<1) || p.getTokenReduction() == 1) {   //If the Player's bet is between 0 to 1(Vip player gets 5% discount)

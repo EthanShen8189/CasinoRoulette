@@ -1,7 +1,9 @@
 import java.util.Arrays;
 
 /**
- * Created by Racoonsy on 15-02-04.
+ * COMP249 Assignment2 CasinoRoulette-Roulette Class-EuropeanRoulette
+ * @author YangShen(7159390)
+ * This is EuropeanRoulette Class, this class is the inherited class from Roulette.
  */
 public class EuropeanRoulette extends Roulette {
 
@@ -89,11 +91,18 @@ public class EuropeanRoulette extends Roulette {
     }
 
 
+    /**
+     * This method overridden the getNumber() from its super class.
+     * @return the numbers of wheel.
+     */
     @Override
     public String[] getNumbers() {
         return numbers;
     }
 
+    /**
+     *
+     */
     public static void toStringTableLayout(){
         System.out.print("European Table Layout:\n");
        for(int i=0; i<3; i++){
