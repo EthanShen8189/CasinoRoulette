@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="662a6e44-dac2-40e4-9a74-b0c517e29072" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AmericanRoulette.java" afterPath="$PROJECT_DIR$/src/AmericanRoulette.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Dealer.java" afterPath="$PROJECT_DIR$/src/Dealer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EuropeanRoulette.java" afterPath="$PROJECT_DIR$/src/EuropeanRoulette.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Player.java" afterPath="$PROJECT_DIR$/src/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RegularPlayer.java" afterPath="$PROJECT_DIR$/src/RegularPlayer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Roulette.java" afterPath="$PROJECT_DIR$/src/Roulette.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VipPlayer.java" afterPath="$PROJECT_DIR$/src/VipPlayer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CasinoRoulette.iws" />
@@ -43,8 +35,8 @@
       <file leaf-file-name="Dealer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Dealer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21367522" vertical-offset="0" max-vertical-offset="3060">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            <state vertical-scroll-proportion="-1.9469123" vertical-offset="2157" max-vertical-offset="3080">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -53,11 +45,9 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3540">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3520">
+              <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,28 +55,9 @@
       <file leaf-file-name="Roulette.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Roulette.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6920">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-              <folding>
-                <element signature="method#Roulette#0;class#Roulette#0" expanded="false" />
-                <element signature="docComment;method#getNumbers#0;class#Roulette#0" expanded="false" />
-                <element signature="docComment;method#getTableChoice#0;class#Roulette#0" expanded="false" />
-                <element signature="docComment;method#tableChoice#0;class#Roulette#0" expanded="false" />
-                <element signature="method#tableChoice#0;class#Roulette#0" expanded="false" />
-                <element signature="docComment;method#setWinningNumber#0;class#Roulette#0" expanded="false" />
-                <element signature="method#setWinningNumber#0;class#Roulette#0" expanded="false" />
-                <element signature="docComment;method#getWinningNumber#0;class#Roulette#0" expanded="false" />
-                <element signature="docComment;method#isBlackNumber#0;class#Roulette#0" expanded="false" />
-                <element signature="method#isBlackNumber#0;class#Roulette#0" expanded="false" />
-                <element signature="docComment;method#isRedNumber#0;class#Roulette#0" expanded="false" />
-                <element signature="method#isRedNumber#0;class#Roulette#0" expanded="false" />
-                <element signature="docComment;method#isEvenNumber#0;class#Roulette#0" expanded="false" />
-                <element signature="method#isEvenNumber#0;class#Roulette#0" expanded="false" />
-                <element signature="docComment;method#isOddNumber#0;class#Roulette#0" expanded="false" />
-                <element signature="method#isOddNumber#0;class#Roulette#0" expanded="false" />
-                <element signature="docComment;method#isFirst12#0;class#Roulette#0" expanded="false" />
-                <element signature="method#isFirst12#0;class#Roulette#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="740" max-vertical-offset="10260">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,8 +65,8 @@
       <file leaf-file-name="EuropeanRoulette.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EuropeanRoulette.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2680">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="2680">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -104,11 +75,9 @@
       <file leaf-file-name="AmericanRoulette.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AmericanRoulette.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-              <folding>
-                <element signature="method#payOutCalculation#0;class#AmericanRoulette#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="6640">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/src/RegularPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -126,12 +95,9 @@
       <file leaf-file-name="VipPlayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/VipPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2460">
-              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-              <folding>
-                <element signature="e#3462#3463#0" expanded="true" />
-                <element signature="e#3519#3520#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2420">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,13 +111,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/TableLayout.java" />
-        <option value="$PROJECT_DIR$/src/Dealer.java" />
         <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/Roulette.java" />
         <option value="$PROJECT_DIR$/src/EuropeanRoulette.java" />
         <option value="$PROJECT_DIR$/src/AmericanRoulette.java" />
         <option value="$PROJECT_DIR$/src/RegularPlayer.java" />
         <option value="$PROJECT_DIR$/src/VipPlayer.java" />
+        <option value="$PROJECT_DIR$/src/Dealer.java" />
       </list>
     </option>
   </component>
@@ -227,6 +193,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,7 +215,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -520,12 +486,18 @@
       <option name="project" value="LOCAL" />
       <updated>1423873811404</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Final version of CasinoRoulette">
+      <created>1423875991194</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1423875991194</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -538,20 +510,20 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955465" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8692946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19296375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18603411" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1924307" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18550107" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939272" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8008299" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8008299" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8692946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -603,7 +575,8 @@
     <MESSAGE value="payOut( ) method half done, need to create an 2D array for complete the method. Need to write javadoc and UML diagram" />
     <MESSAGE value="Project finished, need write javadoc" />
     <MESSAGE value="javadoc half done" />
-    <option name="LAST_COMMIT_MESSAGE" value="javadoc half done" />
+    <MESSAGE value="Final version of CasinoRoulette" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final version of CasinoRoulette" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -631,9 +604,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1220" max-vertical-offset="1920">
           <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -641,26 +612,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="740">
           <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding>
-            <element signature="method#Roulette#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#getNumbers#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#getTableChoice#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#tableChoice#0;class#Roulette#0" expanded="false" />
-            <element signature="method#tableChoice#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#setWinningNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#setWinningNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#getWinningNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isBlackNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isBlackNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isRedNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isRedNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isEvenNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isEvenNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isOddNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isOddNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isFirst12#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isFirst12#0;class#Roulette#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -676,9 +628,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="1420">
           <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
-          <folding>
-            <element signature="method#payOutCalculation#0;class#AmericanRoulette#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -694,10 +644,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="1120">
           <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
-          <folding>
-            <element signature="e#3462#3463#0" expanded="true" />
-            <element signature="e#3519#3520#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -713,26 +660,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="782">
           <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="method#Roulette#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#getNumbers#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#getTableChoice#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#tableChoice#0;class#Roulette#0" expanded="false" />
-            <element signature="method#tableChoice#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#setWinningNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#setWinningNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#getWinningNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isBlackNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isBlackNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isRedNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isRedNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isEvenNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isEvenNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isOddNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isOddNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isFirst12#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isFirst12#0;class#Roulette#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -756,10 +684,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1003">
           <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#3462#3463#0" expanded="true" />
-            <element signature="e#3519#3520#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -767,9 +692,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1377">
           <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -785,26 +708,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="459">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="method#Roulette#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#getNumbers#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#getTableChoice#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#tableChoice#0;class#Roulette#0" expanded="false" />
-            <element signature="method#tableChoice#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#setWinningNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#setWinningNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#getWinningNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isBlackNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isBlackNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isRedNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isRedNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isEvenNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isEvenNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isOddNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isOddNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isFirst12#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isFirst12#0;class#Roulette#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -828,10 +732,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="510">
           <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-          <folding>
-            <element signature="e#3462#3463#0" expanded="true" />
-            <element signature="e#3519#3520#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -839,9 +740,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="1292">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -865,9 +764,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1156">
           <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -883,9 +780,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -901,9 +796,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -919,10 +812,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="560">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="e#3462#3463#0" expanded="true" />
-            <element signature="e#3519#3520#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -938,9 +828,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="1360">
           <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -962,9 +850,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1360">
           <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-          <folding>
-            <element signature="method#payOutCalculation#0;class#AmericanRoulette#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -987,9 +873,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="260">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -997,9 +881,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#payOutCalculation#0;class#AmericanRoulette#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,88 +931,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2584" max-vertical-offset="3520">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Roulette.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6920">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <element signature="method#Roulette#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#getNumbers#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#getTableChoice#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#tableChoice#0;class#Roulette#0" expanded="false" />
-            <element signature="method#tableChoice#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#setWinningNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#setWinningNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#getWinningNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isBlackNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isBlackNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isRedNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isRedNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isEvenNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isEvenNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isOddNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isOddNumber#0;class#Roulette#0" expanded="false" />
-            <element signature="docComment;method#isFirst12#0;class#Roulette#0" expanded="false" />
-            <element signature="method#isFirst12#0;class#Roulette#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="740" max-vertical-offset="10260">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EuropeanRoulette.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2660">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="2680">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AmericanRoulette.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <element signature="method#payOutCalculation#0;class#AmericanRoulette#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="6640">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RegularPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/VipPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2460">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding>
-            <element signature="e#3462#3463#0" expanded="true" />
-            <element signature="e#3519#3520#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3540">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2420">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dealer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21367522" vertical-offset="0" max-vertical-offset="3060">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        <state vertical-scroll-proportion="-1.9469123" vertical-offset="2157" max-vertical-offset="3080">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding />
         </state>
       </provider>
